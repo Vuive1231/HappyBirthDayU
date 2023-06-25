@@ -13,31 +13,24 @@
     var txt = 'FOLLOW F12 ĐỂ XEM THÊM NHIỀU VIDEO MỚI NHÉ !';
     var speed = 100;
     function type1() {
-    if(i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(type1, speed);
-    }
-}</script>
- <div class="main-wrapper">
-  <img src="CSS-Animated-Backgrounds-2.gif" alt="">
-  <p class="bday">
-    Happy Birthday
-  </p>
-<a class="name">
-    -Ánh Dương -
-</a>
- </div>
+      if(i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(type1, speed);
+      }
+  }
+</script>
+<div class="main-wrapper">
+    <img src="backgrounds.gif" alt="">
+    <p class="bday">Happy Birthday</p>
+    <a class="name">-Ánh Dương -</a>
+</div>
  
  
 <audio controls autoplay loop>
-  <source src="HappyBirthdayRemix-DJ-4052574 (1).mp3">
+    <source src="music.mp3">
 </audio>
 <body>
-
-   
-   
-   
     <div class="birthday">
         <div class="birthday_inner">
           <div class="birthday_inner__modal">
@@ -47,7 +40,6 @@
             </div>
           </div>
           <div class="birthday_inner__stage stage1">
-          
               <div class="gallery">
                 <span style="--i:1">
                   <img src="1.jpg" alt="" />
@@ -74,8 +66,6 @@
                   <img src="5.jpg" alt="" />
                 </span>
               </div>
-              
-        
           </div>
         </div>
       </div>

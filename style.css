@@ -4,6 +4,10 @@
 	 font-weight: normal;
 }
 
+@font-face {
+    font-family: bday;
+    src: url('bday.TTF');
+}
 
 body{
     margin: 0;
@@ -19,7 +23,8 @@ body{
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     font-size:120px;
-    font-family: bday;    
+    font-family: bday;
+	/* font-family: url('bday.ttf') format('truetype'); */
 }
 .name{
     margin-left: 450px;
@@ -32,7 +37,7 @@ body{
     cursor: pointer;
     font-size: 100px;
     display:inline-block ;
-   font-family: bday;
+   	font-family: bday;
 }
 .name:hover{
     -webkit-box-reflect: below -8px -webkit-gradient(linear,right top, right bottom,from(transparent),color-stop(85%,transparent),to(rgba(42,99,99,1)));
@@ -250,7 +255,3 @@ img{
 	height:100%;
 	object-fit:cover;
   }
-  @font-face {
-    font-family: bday;
-    src: url(bday.TTF);
-}
