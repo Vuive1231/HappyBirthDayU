@@ -87,7 +87,6 @@ $('.fillings .item_inner').click(function(){
 })
 
 function add_sponge(t){
-
     $('.cakemake').prepend('<div style="width:' + (200 - (bases * 20)) + 'px" class="sponge sponge-' + t + '"><div></div><div></div><div></div><div></div><div></div></div>')
     $('.sponges h5 span').html(bases)
 }

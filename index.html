@@ -8,37 +8,17 @@
     <title>Happy Birthday Ánh Dương</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    var i = 0;
-    var txt = 'FOLLOW F12 ĐỂ XEM THÊM NHIỀU VIDEO MỚI NHÉ !';
-    var speed = 100;
-    function type1() {
-      if(i < txt.length) {
-          document.getElementById("demo").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(type1, speed);
-      }
-  }
-</script>
 <div class="main-wrapper">
-    <img src="backgrounds.gif" alt="">
+    <img src="backgrounds.gif" alt="image">
     <p class="bday">Happy Birthday</p>
     <a class="name">-Ánh Dương -</a>
 </div>
- 
- 
-<audio controls autoplay loop>
-    <source src="music.mp3">
+<audio controls preload="metadata">
+    <source src="music.mp3" type="audio/ogg">
 </audio>
 <body>
     <div class="birthday">
         <div class="birthday_inner">
-          <div class="birthday_inner__modal">
-            <div class="modal_image">
-              <img /></div>
-            <div class="modal_content">
-            </div>
-          </div>
           <div class="birthday_inner__stage stage1">
               <div class="gallery">
                 <span style="--i:1">
@@ -71,5 +51,5 @@
       </div>
 </body>
 
-<script src="main.js"></script>
+<!-- <script src="main.js"></script> file ni dư nì-->
 </html>

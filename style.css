@@ -1,71 +1,75 @@
 @import url(https://fonts.googleapis.com/css?family=Damion);
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
  * {
 	 box-sizing: border-box;
 	 font-weight: normal;
 }
-
 @font-face {
     font-family: bday;
     src: url('bday.TTF');
 }
-
 body{
     margin: 0;
     padding: 0;
     background: black;
+}
+/* đáng cái file audio ni để cho hắn dài rứa cho đủ chức năng. còn ưa css răng thì tìm mấy cái mẫu rồi css lại. */
+/* audio:hover, audio:focus, audio:active{
+	-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+} */
 
+audio{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	/* -webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+	-moz-box-shadow: 2px 2px 4px 0px #006773;
+	-webkit-box-shadow:  2px 2px 4px 0px #006773;
+	box-shadow: 2px 2px 4px 0px #006773;
+	-moz-border-radius:7px 7px 7px 7px ;
+	-webkit-border-radius:7px 7px 7px 7px ;
+	border-radius:7px 7px 7px 7px ; */
 }
 .bday{
-    margin-top: 80px;
     text-align: center;
     background: linear-gradient(180deg,#f80112 0%,#2602f5 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-    font-size:120px;
+    font-size: 70px;
     font-family: bday;
-	/* font-family: url('bday.ttf') format('truetype'); */
+	position: absolute;
+	margin: 60px auto 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
 }
 .name{
-    margin-left: 450px;
-    padding-right:120px ;
-    margin-top: 60px;
+    position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 60px auto 0 auto;
     text-align: center;
     background: linear-gradient(180deg,#f80112 0%,#2602f5 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     font-size: 100px;
-    display:inline-block ;
-   	font-family: bday;
+    display: inline-block ;
+	font-family: 'Pacifico', cursive;
 }
 .name:hover{
     -webkit-box-reflect: below -8px -webkit-gradient(linear,right top, right bottom,from(transparent),color-stop(85%,transparent),to(rgba(42,99,99,1)));
 }
-
- /* body {
-	 font-family: 'Damion', cursive;
-	 background: #fbefec;
-	 background: -moz-radial-gradient(center, ellipse cover, rgba(251, 239, 236, 1) 0%, rgba(218, 180, 180, 1) 100%);
-	 background: -webkit-radial-gradient(center, ellipse cover, rgba(251, 239, 236, 1) 0%, rgba(218, 180, 180, 1) 100%);
-	 background: radial-gradient(ellipse at center, rgba(251, 239, 236, 1) 0%, rgba(218, 180, 180, 1) 100%);
-	 height: 100vh;
-	 overflow: hidden;
-} */
- /* body .birthday .add {
-	 margin-top: 40px;
-	 clear: both;
-	 font-family: 'Damion', cursive;
-	 background: transparent;
-	 border: 2px solid #e77572;
-	 color: #e77572;
-	 font-size: 22px;
-	 padding: 14px 28px;
-	 border-radius: 40px;
-	 transition: all 0.23s;
-	 outline: none;
-	 cursor: pointer;
-} */
  body .birthday .add:hover {
 	 background: #e77572;
 	 color: white;
@@ -132,55 +136,24 @@ body{
 }
  body .birthday_inner__stage {
 	position: absolute;
-	margin-bottom: 500px;
-	 width: 600px;
-	 position: absolute;
-	 left:0;
-	 right:  300px;
-	 margin: auto;
-	 bottom: 1100px;
-	 text-align: center;
-	 top: 50%;
-	 
-	 transform: translateY(-50%);
-}
- body .birthday_inner__stage h1 {
-	 color: #e77572;
-	 margin-bottom: 200px;
-}
- body .birthday_inner__stage h2 {
-	 font-family: 'georgia';
-	 font-size: 12px;
-	 color: #b9918e;
-	 line-height: 18px;
-	 margin: 0;
-}
-audio{
-	
-	width: 100px;
-	height: 50px;
+	/* margin-bottom: 500px; */
+	max-width: 600px;
+	left: 0;
+	right: 0;
+	/* margin: auto; */
+	bottom: 1100px;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 60px auto 0 auto;
 }
 img{
-	
 	width: 100%;
 	height: 100%;
 }
 .main-wrapper img{
 	width: 100%;
-}
-.main-wrapper p{
-	position: absolute;
-	top: 30px;
-	left: 500px;
-	font-size: 120px;
-	
-	font-size: 50px;
-}.main-wrapper a{
-	position: absolute;
-	top: 100px;
-	left: 120px;
-	margin-top: 100px;
-	font-size: 60px;
+	height: 100vh;
 }
  @keyframes in {
 	 from {
@@ -190,7 +163,7 @@ img{
 		 opacity: 1;
 	}
 }
- @keyframes moveup {
+@keyframes moveup {
 	 from {
 		 top: 0;
 	}
@@ -198,7 +171,7 @@ img{
 		 top: -30px;
 	}
 }
- @keyframes mix {
+@keyframes mix {
 	 0% {
 		 transform: translateX(0px);
 	}
@@ -209,7 +182,7 @@ img{
 		 transform: translateX(0px);
 	}
 }
- @keyframes candle {
+@keyframes candle {
 	 from {
 		 opacity: 0;
 	}
@@ -217,10 +190,9 @@ img{
 		 opacity: 1;
 	}
 }
- 
-
 .gallery{
 	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 100px;
 	text-align: initial;
 	position:relative;
@@ -228,30 +200,58 @@ img{
 	height:231px;
 	transform-style:preserve-3d;
 	animation:rotate 35s linear infinite;
-  }
-  
-  @keyframes rotate{
+}
+@keyframes rotate{
 	from{
 	  transform:perspective(1200px) rotateY(0deg);
 	}
-	
 	to{
 	  transform:perspective(1200px) rotateY(360deg);
 	}
-  }
+}
   
-  .gallery span{
+.gallery span{
 	position:absolute;
 	width:100%;
 	height:100%;
 	transform-origin:center;
 	transform-style:preserve-3d;
 	transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
-  }
+}
   
-  .gallery span img{
+.gallery span img{
 	position:absolute;
 	width:100%;
 	height:100%;
 	object-fit:cover;
-  }
+}
+@media(max-width: 850px) {
+	.name{
+		top: 200px;
+		font-size: 70px;
+	}
+}
+@media(max-width: 500px) {
+	.bday {
+		font-size: 45px;
+	}
+	.name{
+		top: 130px;
+		font-size: 60px;
+	}
+	body .birthday_inner__stage {
+		top: 40%;
+	}
+	.gallery span {
+		transform: rotateY(calc(var(--i) * 45deg)) translateZ(260px);
+	}
+}
+@media(max-width: 375px) {
+	.bday {
+		font-size: 35px;
+	}
+	.name{
+		top: 120px;
+		font-size: 45px;
+	}
+}
